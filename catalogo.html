@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biblioteca Virtual - Catálogo</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const formulario = document.querySelector("form");
+        formulario.addEventListener("submit", function (event) {
+          event.preventDefault();
+          const libro = document.getElementById("libro").value;
+          alert('¡Se ha solicitado correctamente el libro "' + libro + '"!');
+          formulario.reset();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Escribe aquí o teu html-->
+
+    <section id="prestamo">
+      <h2>Formulario de Préstamo</h2>
+      <form action="#" method="get">
+        <!-- Define aquí o formulario -->
+      </form>
+    </section>
+  </body>
+</html>
